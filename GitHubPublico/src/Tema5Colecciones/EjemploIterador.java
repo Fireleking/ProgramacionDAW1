@@ -3,7 +3,6 @@ package Tema5Colecciones;
 import java.util.Iterator;
 import java.util.LinkedList;
 
-
 public class EjemploIterador {
 
 	public static void main(String[] args) {
@@ -39,6 +38,9 @@ public class EjemploIterador {
 				p = invisible;
 
 		System.out.println("Intentamos cambiar al Malo a invisible con un iterador");
+
+		it = misAmigos.iterator(); // Atención, tengo que volver a generar el iterador, si no ya estaría recorrido
+									// y por tanto "gastado"
 
 		while (it.hasNext()) {
 			Persona p = it.next();
